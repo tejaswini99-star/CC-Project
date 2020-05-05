@@ -1,0 +1,394 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>img {max-width:100%}
+    .model-dialog {max-width: 90% !important}
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+            $(".modal-dialog").css({"width":"90%","max-width":"90%"});
+      });
+      </script>
+	
+</head>
+<body>
+<center><h2>Crime Data Analysis of Kansas City</h2></center>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Sno</th>
+      <th scope="col">Topic</th>
+        <th scope="col">Visualization</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td> Age Influence on Crime Data</td>
+        <td><a href="#" data-toggle="modal" data-target="#myModal"><img src="graphs.PNG"></a>
+        </td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td> Observation between Age and Sex</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal1"><img src="graphs.PNG"></a></td>
+
+    </tr>
+   <tr>
+      <th scope="row">3</th>
+      <td> Mosaic for Sex and Race</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal2"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  <tr>
+      <th scope="row">4</th>
+      <td> Crime Data Based on the Area</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal3"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  <tr>
+      <th scope="row">5</th>
+      <td> Catplot Observation between Age and Race</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal4"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  <tr>
+      <th scope="row">6</th>
+      <td> Crime count in each Month</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal5"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  <tr>
+      <th scope="row">7</th>
+      <td> Catplot for the Firearm used by Race</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal6"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  <tr>
+      <th scope="row">8</th>
+      <td> Crime rate according to Zipcode</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal7"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  <tr>
+      <th scope="row">9</th>
+      <td> Locations of the Crime</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal8"><img src="graphs.PNG"></a></td>
+
+    </tr>
+<tr>
+      <th scope="row">10</th>
+      <td> Criminal Activities by different race on Every Month</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal9"><img src="graphs.PNG"></a></td>
+
+    </tr>
+<tr>
+      <th scope="row">11</th>
+      <td>Crime Data on according to the Days of Month</td>
+      <td><a href="#" data-toggle="modal" data-target="#myModal10"><img src="graphs.PNG"></a></td>
+
+    </tr>
+  </tbody>
+</table>
+ <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Age Influence on Crime Data</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+		
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/Agepng1.PNG"/></center>
+			<p>The graph shows people with age range 20-80 have mostly Influenced of crime. The peak is noted at age 38. </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+ <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Observation between Age and Sex</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+		<p>Through graph we can say that Male at the age range 30-43 comitted more crime and median age is recorded at 38. Female with age range 28-45 comitted more range and median age is recorded at 36. Also observed that Female age range is greater than male age range.</p>
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/age+vs+sex.PNG"/></center>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Mosaic for Sex and Race</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/mosaic+for+sex+and+race.PNG"/></center>
+			<p>Observation is that Whites in male category comitted more crime than Blacks in Male Category, Whites in Female category and Blacks in Female category. Blacks in male category has comitted more crime than Blacks and Whites in Female category. Whites and Blacks has comitted almost same percent of crime.</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Crime data based on the Area</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/crime+data+based+on+area.PNG"/></center>
+			<p>The highest crime recorded area is EPD. Lowest recorded area is OSPD. The highest to lowest crime recorded areas are CPD, MPD, SPD, SCP, NPD.
+
+Where EPD stands for , OSPD stands for , CPD stands for , MPD stands for, SPD stands for, SCP stands for, NPD stands for.
+</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Catplot Observation between Age and Race</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/catplot+for+age+and+race.PNG"/></center>
+			<p>Observation shows that Whites, blacks and American Indian or Alaska native have equal percent in Male and Female category. All have the highest peak point at age 38.</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal5">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Crime count in each Month</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/crime+in+each+month.PNG"/></center>
+			<p>The highest rate of crime is seen in September month, the count is 6000 and lowest crime rate is seen in March, the count is 1500 according to the dataset. The order from least to greatest according to the dataset is May, July, August, October, April, June, November, December.</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal6">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Catplot for the Firearm used by Race</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/firearm+used+based+by+race+and+age.PNG"/></center>
+			<p>In Whites category Male and Female has equal percentage of using firearms, range 32-43 in male and 26-38 in female category but according to graph the median of age used firearm is 38 in male and 38 in female.
+In Blacks category Male used more firearm than female, range 28-45 in male and 25-38 in female category but according to graph the median of age used firearm is 37 in male and 39 in female.
+In American Indian or Alaska naive category Female used more firearm than male, range 29-47 in male and 26-48 in female category but according to graph the median of age is 38 in male and 28 in female.</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal7">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Crime rate according to Zipcode</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/crime+rate+based+on+zipcode.PNG"/></center>
+			<p>According to the graph the highest recorded crime is in area with zipcode '64127' and the percentage is 23.1%</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal8">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Locations of the Crime</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/locations+of+crime.PNG"/></center>
+			<p>The areas which are considered as red zone i.e., crime reported areas are Independence ave, Prospect ave,Paseo kansas, Westport, Troost, Main ST, Armour, Meyer Blvd.</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal9">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Criminal Activities by different race on Every Month</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/criminals+count+based+on+race.PNG"/></center>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal" id="myModal10">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Crime Data on according to the Days of Month</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <center><img src="https://crimedataanalysis.s3.amazonaws.com/Crime+on+different+days+of+a+month.PNG"/></center>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<a href="https://s3.console.aws.amazon.com/s3/object/crimedataanalysis/Model1.pk2?region=us-east-1" download>
+  <button type="button">SVC Model</button>
+
+</a>
+</body>
+</html>
